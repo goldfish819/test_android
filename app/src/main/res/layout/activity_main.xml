@@ -10,7 +10,36 @@
     tools:context=".activity.MainActivity">
 
     <TextView
+        android:id="@+id/text_hello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
+
+    <Button
+        android:id="@+id/btn_act1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="act1"
+        android:layout_below="@+id/text_hello" />
+
+    <Button
+        android:id="@+id/btn_act2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="act2"
+        android:layout_below="@+id/btn_act1" />
+
+    <Button
+        android:id="@+id/btn_act3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="act3"
+        android:layout_below="@+id/btn_act2" />
+
+    <Button
+        android:id="@+id/btn_gotologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login!"
+        android:layout_below="@+id/btn_act3" />
 </RelativeLayout>
