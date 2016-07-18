@@ -1,45 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".activity.MainActivity">
 
-    <TextView
-        android:id="@+id/text_hello"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <!--<android.support.design.widget.AppBarLayout-->
+    <!--android:layout_height="?attr/actionBarSize"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:background="#90EE90"-->
+    <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
+
+    <!--<android.support.v7.widget.Toolbar-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/act2_title"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:text="set password"-->
+    <!--android:textStyle="bold"/>-->
+    <!--</android.support.v7.widget.Toolbar>-->
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/text_hello"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Hello World!" />-->
+
 
     <Button
         android:id="@+id/btn_act1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="act1"
-        android:layout_below="@+id/text_hello" />
+        android:text="act1" />
 
     <Button
         android:id="@+id/btn_act2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="act2"
-        android:layout_below="@+id/btn_act1" />
+        android:layout_below="@+id/btn_act1"
+        android:text="act2" />
 
     <Button
         android:id="@+id/btn_act3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="act3"
-        android:layout_below="@+id/btn_act2" />
+        android:layout_below="@+id/btn_act2"
+        android:text="act3" />
 
     <Button
         android:id="@+id/btn_gotologin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="login!"
-        android:layout_below="@+id/btn_act3" />
+        android:layout_below="@+id/btn_act3"
+        android:text="login!" />
+
+    <ImageView
+        android:id="@+id/img_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_gotologin"
+        android:src="@drawable/info" />
+
+
 </RelativeLayout>

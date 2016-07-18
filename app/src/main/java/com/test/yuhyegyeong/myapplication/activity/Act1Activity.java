@@ -14,36 +14,22 @@ import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.sangcomz.fishbun.FishBun;
 import com.sangcomz.fishbun.define.Define;
 import com.test.yuhyegyeong.myapplication.R;
 
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Hashtable;
-import java.util.Map;
-import java.util.jar.Manifest;
 
 /**
  * Created by yuhyegyeong on 2016. 5. 25..
@@ -53,7 +39,20 @@ public class Act1Activity extends AppCompatActivity{
     private static final int PICK_FILE_REQUEST =1;
     private static final int MY_PERMISSIONS_REQUEST_READ_CONTACTS = 1;
     private static final int MY_PERMISSION_REQUEST_READ_EXTERNAL_STORAGE = 2;
+
+//    public final static int FRAGMENT_ONE = 0;
+//    public final static int FRAGMENT_TWO = 1;
+//    public final static int FRAGMENT_THREE = 2;
+//    int mCurrentFragmentIndex;
+//    Button btn_act1_frag1;
+//    Button btn_act1_frag2;
+//    Button btn_act1_frag3;
+
     private final int REQUEST_CODE_SELECT = 100;
+
+    ImageView mainMenu;
+    TextView mainTitle;
+
     EditText act1Title;
     EditText act1Content;
     Button act1BtnCamera;
@@ -77,10 +76,11 @@ public class Act1Activity extends AppCompatActivity{
         init();
     }
 
-    private void init(){
+    private void init() {
         act1Title = (EditText) findViewById(R.id.act1_title);
         act1Content = (EditText) findViewById(R.id.act1_content);
         act1BtnCamera = (Button) findViewById(R.id.act1_btn_camera);
+
         // act1Photo = (ImageView) findViewById(R.id.act1_photo);
 
         act1BtnCamera.setOnClickListener(new View.OnClickListener() {
@@ -109,6 +109,7 @@ public class Act1Activity extends AppCompatActivity{
                 }
             }
         });
+
     }
 
 //    private void showFileChooser() {

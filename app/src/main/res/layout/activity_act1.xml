@@ -4,27 +4,62 @@
     android:orientation="vertical"
     android:weightSum="1">
 
-    <!-- create 시 : writer, writedate 자동 입력 -->
-    <EditText
-        android:id="@+id/act1_title"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="title"/>
-    <EditText
-        android:id="@+id/act1_content"
+        android:orientation="vertical">
+
+        <!-- create 시 : writer, writedate 자동 입력 -->
+        <EditText
+            android:id="@+id/act1_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="title" />
+
+        <EditText
+            android:id="@+id/act1_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_act1"
+            android:inputType="textMultiLine"
+            android:lines="5" />
+
+        <Button
+            android:id="@+id/act1_btn_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="upload" />
+
+        <ImageView
+            android:id="@+id/act1_photo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/imageview_border" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/shape_act1"
-        android:inputType="textMultiLine"
-        android:lines="5" />
-    <Button
-        android:id="@+id/act1_btn_camera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="upload"/>
-    <ImageView
-        android:id="@+id/act1_photo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:background="@drawable/imageview_border" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/act1_btn_frag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/act1_btn_frag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/act1_btn_frag3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3" />
+    </LinearLayout>
+
 </LinearLayout>
+

@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.test.yuhyegyeong.myapplication.R;
 
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Button gotoact2 = (Button) findViewById(R.id.btn_act2);
         Button gotoact3 = (Button) findViewById(R.id.btn_act3);
         Button gotologin = (Button) findViewById(R.id.btn_gotologin);
+        ImageView imgtest = (ImageView) findViewById(R.id.img_test);
 
         gotologin.setOnClickListener(new View.OnClickListener() {
             @Override
